@@ -900,7 +900,7 @@ h1 { animation-delay: 0.2s; }
   .stat-number { font-size: 1.6rem; }
   .services-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr !important; }
-  .avatar-frame { width: 300px; height: 320px; }
+  .avatar-frame { width: 350px; height: 320px; }
   .avatar-initials { width: 80px; height: 80px; }
   .avatar-name { font-size: 1.1rem; }
   .avatar-role { font-size: 0.75rem; }
