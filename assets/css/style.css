@@ -245,15 +245,19 @@ h1 .line1, h1 .line2 { display: block; }
   align-items: center;
 }
 
+/* Atualize este bloco no seu arquivo CSS */
 .avatar-frame {
   position: relative;
+  /* Torna a largura responsiva: 100% da largura do contêiner pai */
   width: 100%;
-  max-width: 340px;
+  /* Define um tamanho máximo para que não fique gigante em desktops */
+  max-width: 340px; 
+  /* Mantém a altura flexível e remove a altura fixa anterior */
   height: auto;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Centraliza o card horizontalmente dentro do contêiner pai */
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Garante que as margens funcionem */
 }
 
 .avatar-card {
