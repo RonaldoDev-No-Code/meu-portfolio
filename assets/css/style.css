@@ -247,13 +247,20 @@ h1 .line1, h1 .line2 { display: block; }
 
 .avatar-frame {
   position: relative;
-  width: 340px;
-  height: 400px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar-card {
-  width: 350px;
-  height: 320px;
+  width: 90%;
+  max-width: 330px; /* Mantém o card menor que o frame */
+  height: auto;
+  min-height: 320px;
   background: var(--bg3);
   border: 1px solid var(--border);
   border-radius: 24px;
@@ -263,7 +270,8 @@ h1 .line1, h1 .line2 { display: block; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.2rem;
+  padding: 1.5rem 1rem; /* Adiciona respiro para o conteúdo interno não colar nas bordas */
 }
 
 .avatar-card::before {
