@@ -877,7 +877,18 @@ h1 { animation-delay: 0.2s; }
   .nav-hamburger { display: flex; }
   .hero-inner, .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-visual { order: -1; }
-  .avatar-frame { width: 90%; max-width: 360px; height: 310px; }
+  
+  .avatar-frame { 
+    width: 90%; 
+    max-width: 360px; 
+    height: auto; 
+    min-height: 320px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
   .floating-pill { display: none; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .services-grid { grid-template-columns: 1fr 1fr; }
